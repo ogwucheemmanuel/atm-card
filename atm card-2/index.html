@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atm Card</title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+      <button id="legend">Check me</button>
+    <div class="card" id="card">
+      <div class="front-face">
+        <div class="row">
+          <div class="col col-left">
+              <img src="img/fcmb.png" class="logo" alt="FCMB"/>
+          </div>
+          <div class="col col-right">
+            <span class="standardText">First City Monument Bank</span>
+          </div>
+        </div> <!-- end row -->
+        <div class="row">
+          <div class="col col-left"></div>
+          <div class="col col-right">
+            <p class="standardText">Debit</p>
+            <!-- <img src="onevervesomething" class="" alt="one verve something"/> -->
+          </div>
+        </div><!-- end row -->
+        <div class="row">
+          <div class="col">
+            <img src="img/smartchip.jpg" class="chip" alt="smart chip"/>
+            <span class="monospace">0002 6723 4649 8747</span>
+          </div>
+        </div>
+        <div class="center">
+          <p><small class="standardText">Month/Year</small></p>
+          <p>
+            <sup>Valid Thru</sup>
+            <big>01/20</big>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col col-left">
+            <h2 class="legendary-name">Ogwuche Emmanuel</h2>
+          </div>
+          <div class="col col-right">
+              <img src="img/vervelogo.png" class="verve" alt="verve logo"/>
+          </div>
+        </div>
+      </div><!-- end front-face -->
+
+      <div class="back-face">
+          <div class="row">
+            <div class="col col-left"><small>www.fcmb.com</small></div>
+            <div class="col col-right"><span>ASD-1234-6789</span></div>
+          </div>
+          <div class="row bg-black"></div>
+          <div class="row">
+            <div class="col col-left">
+              <div class="col col-left text-upper">
+                <small>authorized signature</small> &nbsp;&nbsp;&nbsp;&nbsp;
+                <small>not valid unless signed</small>
+              </div>
+              <div class="col col-right"></div>
+            </div>
+            <div class="col col-right"></div>
+          </div>
+          <div class="row">
+            <div class="col verve-multi">
+              <i>578</i>
+            </div>
+            <div class="col col-right"></div>
+          </div>
+          <div class="block">
+            <span>This card should be used in accordance with &nbsp;<code>bankname</code> &nbsp; terms and conditions.</span>
+            <span>24 Hours &nbsp;<code>bankname</code> &nbsp; contact centre(+250)12-3456793</span>
+            <span>0700-<code>BANKNAME</code>-MYBANK (0801 2345 6789)</span>
+            <span>Or send an email to customerservice@<code>mybank</code>.com</span>
+          </div>
+          <div class="row">
+            <div class="col col-left">
+              <img src="img/rewardChip.png" class="firstImg" alt="reward chip" />
+            </div>
+            <div class="col col-center">
+              <img src="img/fcmb.png" class="secondImg" alt="fcmb logo" />
+            </div>
+            <div class="col col-right">
+              <img src="img/interswitch.png" class="thirdImg" alt="interswitch logo" />
+            </div>
+          </div>
+        </div><!-- end back-face -->
+
+    </div>
+    <script>
+          document.getElementById('legend').addEventListener('click', ()=>{
+            document.getElementById('card').classList.toggle('flip');
+          })
+        </script>
+        </body>
+        </html>

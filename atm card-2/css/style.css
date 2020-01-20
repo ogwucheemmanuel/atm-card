@@ -1,0 +1,51 @@
+body{background-color: rgb(245, 192, 245);}
+
+.card{
+    margin-left: auto;margin-right: auto;width: 500px;
+    padding: 1rem;border-radius : 0.75rem;position: relative;
+    transform: scale(1);transform-style: preserve-3d;transition: transform .5s;
+  }
+  .row{display: flex;}
+  .row > .col{margin: auto;}
+  .row > .col-left{text-align: left;}
+  .row > .col-right{text-align: right;}
+  .row > .col-center{text-align: center;}
+  
+  .front-face{
+    color: #fff;padding: 1rem;
+    background: #42275a; /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(90deg, rgba(155, 10, 10, 0.829), rgba(106, 3, 224, 0.6)), url('obliged.jpg');/*  Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(90deg, rgba(155, 10, 10, 0.829), rgba(106, 3, 224, 0.6)), url('../img/obliged.jpg'); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;background-size: cover;background-position: center;
+  }
+  .front-face, .back-face{
+    width: 535px;
+    font-family: serif;
+    border-radius : 0.75rem;
+    backface-visibility: hidden;
+    position: absolute;
+    box-shadow: 0 1rem 3rem rgba(65, 4, 4, 0.397) !important;      
+  }
+  .back-face{color: #000;background: #ffffff;transform: rotateY(180deg);}
+  .standardText{font-family: monospace;text-transform: uppercase;}
+  .monospace{font-family: monospace;font-weight:100;word-spacing: 0.5rem;font-size: 2em;text-align:center;}
+  .legendary-name{font-family: monospace;letter-spacing: 0.25rem;font-weight: lighter;text-transform: uppercase;}
+  .logo{height: 3rem;}
+  .chip, .verve{height: 2rem;}
+  .chip{margin-left: -1.5rem;margin-right: 5rem;margin-top: 0.5rem;border-radius:0.3rem;}
+  .text-upper{text-transform: uppercase;}
+  .bg-black{height: 50px;width: 100%;margin-bottom: 0.5rem;background-color: #000;}
+  .verve-multi{
+    background-image: url('../img/multiverve-crop.png');background-size: cover;
+    height: 50px;width: 70%;text-align: right;}
+  .verve-multi i{text-align: right;letter-spacing: 0.5rem;font-size: 2em;}
+  .block{padding: 1rem;font-size: 0.82em;font-weight: 500;}
+  .block>span{display: block;}
+  .firstImg{border-radius: 0.75rem;width: 50px;}
+  .secondImg{width: 50px;}
+  .thirdImg{width: 100px;}
+  .flip{transform: rotateY(180deg);}
+  div.col.col-left.text-upper{font-weight: bold;font-size: 0.8em;}
+  div.center{text-align: center;}
+  img{border-radius: 0.2rem;}
+  big{letter-spacing: 0.25rem;margin-left: 0.4rem}
